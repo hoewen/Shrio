@@ -1,1 +1,1 @@
-worker: node Shiro
+worker: node bot.js
