@@ -1,14 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-client.on('ready', () => {
-    console.log('I am ready!');
-});
-
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
+     if(message.content.toLowerCase().includes("zarkon"))
+               message.channel.send("The Galra will be defeated, don't you worry. The galaxy will soon be safe.")
 });
 
 // THIS  MUST  BE  THIS  WAY
